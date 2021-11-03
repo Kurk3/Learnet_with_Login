@@ -1,0 +1,47 @@
+{% extends "base_templates/base.html" %} {% block title %}Home{% endblock %} {% block content %}
+    <br>
+    <h1 align="center">This is table of </h1>
+
+
+    <table>
+        <tr>
+            <th>UZIVATEL</th>
+            <th>TEST1</th>
+            <th>TEST2</th>
+            <th>TEST3</th>
+        </tr>
+
+        {% for row in data %}
+            <tr>
+                <td>{{ row.first_name }}</td>
+            </tr>
+        {% endfor %}
+
+        {% for tested_user in tests %}
+            <tr>
+                <td>{{ tested_user.test1 }}</td>
+            </tr>
+        {% endfor %}
+
+        {% for tested_user in tests %}
+            <tr>
+                <td>{{ tested_user.test2 }}</td>
+            </tr>
+        {% endfor %}
+
+        {% for tested_user in tests %}
+            <tr>
+                <td>{{ tested_user.test3 }}</td>
+            </tr>
+        {% endfor %}
+
+
+    </table>
+
+
+
+
+
+
+
+{% endblock %}

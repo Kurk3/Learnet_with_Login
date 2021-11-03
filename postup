@@ -1,0 +1,164 @@
+TO DO:
+------------------------------------------------------------------------------------------------------
+CAST TEST:
+- vytvorenie testu ktory : (kazda kokotina bude mat spravne odpovede) za kazdu spravnu odpoved sa do variable
+pripocita jeden bod a na zaklade finalneho poctu bodov sa vypocita konecny pocet zo vsetkych otazok:
+- nasledne sa vysledok pod aktualnym current userom commitne do tabulky pod kolonku s nazvom testu:
+
+user_name/user_id    test1     test2    test3
+ AdamKurek/3          45        67       100
+---------------------------
+CAST LECTURES:
+- bude tam ucivo ktore spracujem a nasledne na konci stranky bude mozne presmerovanie na test ---> CAST TEST
+------------------------------------------------------------------------------------------------------
+FAZA 2:
+Design urobit to pekne aby to malo upravu dobru citatelnost a vsetko spojene s tym.
+------------------------------------------------------------------------------------------------------
+FAZA 3:
+Uprava malych chyb ktore nastali v otazkach a v takych kktinach
+------------------------------------------------------------------------------------------------------
+14 oct Oprava chyb (uspesne)
+---------------------------
+chyba bola ze som mal zle pomenovane funkcie mali rovnaky nazov ako routy a to nesmie byt
+
+Pridanim tohoto riadku pridam url :
+<p><a href="/tests">Click me to Test 1 !</a></p>
+------------------------------------------------------------------------------------------------------
+15 oct (Bratislava + praca na portfolio webstranke). + podrobny navrh a postup pri praci na tejto stranke
+-----------------------------------------------------------------------------------------------------------
+17 oct navrh diagramovej schemy + navrh projektu :
+
+CO MAM:
+ - Login/register
+ - Routy na lectures/testy
+
+CO POTREBUJEM :
+
+TEST:
+--------------------------------------------------
+ - Navrhnut abcd test ktory
+ - kazdu spravnu odpoved prirada k variable a ta bude mat konecny pocet bodov nejaky ktore prepocita na percenta. pri submitte.
+ ------------------------------------------------------------
+NAVRH:
+
+test abcd otazky cez radio buttony.
+ked uzivatel nezaklikne alebo oznaci zlu spravnu odpoved neprirata bod.
+ak uzivatel zaskrkne spravnu odpoved bod prirata z celkoveho poctu bodov v teste. (tam pouzijem jednoduchy vzorec na percenta)
+
+vysledok testu sa ulozi do databazy do kolonky pre ten dany test . (priklad vyssie) pod uzivatelovym id alebo menom. (current user)
+
+Tabulka: (pre admina)
+Vytvorenie tabuliek kde zobrazi informacie ako dopadli jednotlive testy pre uzivatelov: (vytiahnutie z db)
+
+----------------------------------------------------------------
+
+Spristupnenie len urcitych casti pre uzivatelov s permissionom
+
+Ziak : Lectures,Testy
+
+Ucitel : Lectures,Testy,Tabulka
+
+-----------------------------------------------------------------
+
+Zlepsenie designu v css a html:
+
+
+-----------------------------------------------------------------
+26 oct
+
+PS : fungovalo to ked tam if post metoda.
+
+- zakladni koncept testu este treba pridat podmienku tak aby zobrazilo odpovede az po tom ako uzivatel stlaci to tlacitko.
+- finalizacia ked spocita finalny pocet bodov a prepise ich na percenta.
+- 
+
+--------------------------------------------------------------------
+30 oct dokoncenie testu .
+
+TEST AKTUALIZACIA :
+- presmerovanie na homepage
+
+- vytvorit databazu do ktorej bude ukladat spravne odpovede
+- urobit prepojenie do db velmi podobne ako bolo pri notes pri prvotnej aplikacii.
+
+
+----------------------------------------------------------------------
+31 oct
+
+- urobit tu databazovu tabulku
+- pokracovat v tom commitnuti toho testu
+- tak aby to finalne islo.
+
+- prerobit tu tabulku jednu na commitovanie informacii do nej.
+- zistit :
+
+ preco sa neda commitovat do db ked je tam presne pridani ten stlpec a je rovnaky ako je pri
+
+ - ulozenie do databazy testu pod uzivatelovym id [done]
+
+ ----------------------------------------------------------------------
+ 1.nov
+
+ TO DO :
+ - rozdelit uzivatelov admin/uzivatel
+ - vytvorenie navyse routy pre tych ktory su uzivatelia.
+ -
+
+ - how to make administrator with flask login_view
+ - ked budem mat administratora tak urobit tabulku pre vizualne zobrazenie vsetkych testov a vizualne zobrazenie
+ - na zaklade id uzivatela priradit meno uzivatela a nasledne ho zobrazit.
+
+
+opravenie import erroru toho admina.
+
+-stiahnutim to nebude.
+
+HLADAT NA TO RIESENIE:
+
+
+ALTERNATIVNE RIESENIE :
+
+- vytvorenie "loginu" v logine
+- po prihlaseni presmeruje na vysledkovy page.
+- bude obsahovat tu tabulku.
+
+Presmerovanie na adresu aj vsetko funguje.
+
+DALSI KROK:
+potrebujem pridat adresu na ktoru sa bude dat dostat iba z hentej stranky
+
+hotovo trik bol v tom ze som musel odstranit get metodu v route a musel som tam nechat len post
+redirect nefungoval zmenil som ho na render template.
+
+-------------------------------------------------------------------------------------------------
+2 nov.
+
+- ziskanie uzivatelov z databazy a ich nasledne zobrazenie v tabulke a informacie o nich. max 1x60 min
+
+----------------------------------------------------------------------------------------------------
+3 nov
+
+navrh a zobrazenie tabulky uzivatelov,
+
+user_id |  test1 | test2 | test3 | meno_uzivatela
+
+-neuspesna vytvorenie dinamickej tabulky (pohrat sa s tym a vytvorit tabulku ktora nebude takato prijebana)
+
+- pripadne pridat oindexovanie ale to je kokotina nefunkcna.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
