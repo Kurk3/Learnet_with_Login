@@ -31,8 +31,11 @@
     <div class="collapse navbar-collapse" id="navbar">
         <div class="navbar-nav">
             {% if user.is_authenticated %}
+                <a class="nav-item nav-link" id="lectures" href="/lectures">Lectures</a>
+                <a class="nav-item nav-link" id="tests" href="/tests">Tests</a>
                 <a class="nav-item nav-link" id="home" href="/">Home</a>    <!--toto je home aplikacia ktoru prerobim-->
                 <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
+                <a class="nav-item nav-link" id="logout" href="/vysledky">Vysledky</a>
             {% else %}
                 <a class="nav-item nav-link" id="login" href="/login">Login</a>
                 <!--toto je pri zakladnej stranke ked otvorim-->

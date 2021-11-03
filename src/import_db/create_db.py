@@ -12,4 +12,5 @@ def create_engine(app):
 
 
 def create_tables(app):
+      print('table was created! ')
       db.create_all(app=app) #create all tables

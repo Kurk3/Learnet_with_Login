@@ -16,6 +16,8 @@
         <option value="$MODULE_DIR$/src/templates/before_login" />
         <option value="$MODULE_DIR$/src/templates/base_templates" />
         <option value="$MODULE_DIR$/src/templates/after_login" />
+        <option value="$MODULE_DIR$/src/templates/lectures" />
+        <option value="$MODULE_DIR$/src/templates/tests" />
       </list>
     </option>
   </component>

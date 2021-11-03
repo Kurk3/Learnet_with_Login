@@ -1,8 +1,9 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
-from src.import_db.tables import User
-from werkzeug.security import generate_password_hash, check_password_hash
-from src import db
 from flask_login import login_user, login_required, logout_user, current_user
+from werkzeug.security import generate_password_hash, check_password_hash
+
+from src import db
+from src.import_db.tables import User
 
 auth = Blueprint('auth', __name__)
 
@@ -30,7 +31,8 @@ def login():
 
     return render_template("before_login/login.html", user=current_user)
 
-#login##########################################################################################
+
+# login##########################################################################################
 
 @auth.route('/logout')
 @login_required
@@ -38,7 +40,8 @@ def logout():
     logout_user()
     return redirect(url_for('auth.login'))
 
-#logout##########################################################################################
+
+# logout##########################################################################################
 
 @auth.route('/sign-up', methods=['GET', 'POST'])
 def sign_up():
