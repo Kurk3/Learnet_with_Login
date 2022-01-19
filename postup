@@ -15,7 +15,7 @@ FAZA 2:
 Design urobit to pekne aby to malo upravu dobru citatelnost a vsetko spojene s tym.
 ------------------------------------------------------------------------------------------------------
 FAZA 3:
-Uprava malych chyb ktore nastali v otazkach a v takych kktinach
+Uprava malych chyb ktore nastali v otazkach a v takych kktinach.
 ------------------------------------------------------------------------------------------------------
 14 oct Oprava chyb (uspesne)
 ---------------------------
@@ -146,19 +146,72 @@ user_id |  test1 | test2 | test3 | meno_uzivatela
 
 - pripadne pridat oindexovanie ale to je kokotina nefunkcna.
 
+----------------------------------------------------------------------------------------------------------
+4 nov
+
+Vytvorenie tabulky
+
+Prijdenie na 2 alternativne riesenia:
+
+1. Vytvorim tabulku kazdu pre samostatny test + tam pridam cas aby presne admin vedel kedy uzivatel test odovzdal. [toto]
+
+2. Navrhnem ini styl tabulky pri ktorom sa bude menej informaci z databazy commitovat.
+
+------------------------------------------------------------------------------------------------
+8 nov
+
+- vytvorenie novych tabuliek pre uzivatela.
+- aby zobrazovalo v len test1 a necommitovalo prazdny riadok.
+- prepisat
+
+9:
+
+ak uzivatel pod tym id ma v riadku uz test  pisal tak sa necomitne do databazy nic.
+
+ale ak uzivatel nepisal commitne sa vysledok do databazy. updatne sa row len row neprida sa novy
+
+dobre zaklad mam :
+
+teraz potrebujem:
+
+ak uzivatel nepisal tak to commitne do jeho vytvoreneho riadku na zaklade jeho id.
 
 
+potrebujem updatnut tu query v tabulke.
+
+https://stackoverflow.com/questions/6699360/flask-sqlalchemy-update-a-rows-information
 
 
+ked sa test1 nerovna nicomu :
+tak sa opytat ci sa este test2 nerovna nicomu a test3 nerovna nicomu
+ked sa nerovnaju vytvorit novy riadok
+inak
+ked sa nieco niecomu rovna vytvorit novy riadok:
+----------------------------------------------------------------
+12 nov
 
+Finish backendu:
 
+Postup a navrh:
 
+- navrhnem navbar a farby a vseky tieto veci ako to cele bude vyzerat:
 
+-------------------------------------------
+17 nov
 
+-navrh designov pre lectures pre tabulku pre test etc...
 
+1. co to bude obsahovat.
+2.design toho ako to bude vyzerat na zaklade hack the box nejako sa zorientovat.
+3.
 
+<div class="big_lecture_box">
 
+<div class="small_lecture_box">
+  <div class="picture_in_small_lecture_box"> </div>
+     <h3 class="heading_lecture_box"> Sietove topologie <h3>
+  </div>
+</div>
 
-
-
+</div>
 
