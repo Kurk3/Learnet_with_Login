@@ -2,4 +2,5 @@ Werkzeug==2.0.1
 SQLAlchemy==1.4.25
 Flask_SQLAlchemy==2.5.1
 Flask_Login==0.5.0
+gunicorn==19.0.0
 Flask==2.0.1
