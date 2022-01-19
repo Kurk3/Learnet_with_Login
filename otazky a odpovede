@@ -1,0 +1,82 @@
+1.V ktorej vrstve operuje sieťov komponent HUB?
+A. Vrstva relácie
+B. Fyzická vrstva  #
+C. Vrstva dátového spojenia
+D. Aplikačná vrstva
+
+Ktorá trieda adries IP má predvolene k dispozícii najviac adries pre hostov?
+A. A #
+B. B
+C. C
+D. F
+
+
+Aká dlhá je IPv6 adresa?
+A.	32 bits
+B.	128 bytes
+C.	64 bits
+D.	128 bits #
+
+
+Aký druh prekladu sieťových adries možno použiť na to,
+aby jedna adresa IP umožnila mnohým používateľom pripojiť sa k internetu?
+A.	NAT (network address translation)
+B.	Static
+C.	Dynamic
+D.	PAT (Port Address Translation) #
+
+
+
+Ktorá z nasledujúcich možností je platným rozsahom hostov pre podsieť,
+v ktorej sa nachádza adresa IP 192.168.168.188 255.255.255.192?
+A. 192.168.168.129-190 #
+B. 192.168.168.129-191
+C. 192.168.168.128-190
+D. 192.168.168.128-192
+
+
+
+
+Aký protokol používa PPP na identifikáciu protokolu sieťovej vrstvy?
+A. NCP #
+B. ISDN
+C. HDLC
+D. LCP
+
+
+Ktorá z nasledujúcich adries je súkromná IP adresa?
+A.	12.0.0.1
+B.	168.172.19.39
+C.	172.15.14.36
+D.	192.168.24.43 #
+
+
+Ktorá z nasledujúcich možností popisuje funkcie routera?
+A. Prepínanie paketov
+B. Filtrovanie paketov
+C. Internetová komunikácia
+D. Výber cesty
+E. Všetky vyššie uvedené
+
+
+
+Čo robí VLAN?
+A. Funguje ako najrýchlejší port pre všetky servery.
+B. Poskytuje viacero kolíznych domén na jednom porte prepínača.
+C. Rozdeľuje broadcast domény v prepínacej sieti vrstvy 2. #
+D. Poskytuje viacero vysielacích domén v rámci jednej kolíznej domény.
+
+
+
+Aký je hlavný dôvod vytvorenia modelu OSI?
+A. Vytvorenie vrstveného modelu väčšieho ako model DoD.
+B. Ulahčený vývoj webových aplikacií.
+C. Aby rôzne siete mohli medzi sebou komunikovať. #
+D. CISCO chcelo mat vlastný model.
+
+
+Aký protokol používa Ping?
+A.	TCP
+B.	ARP
+C.	ICMP #
+D.	BootP
